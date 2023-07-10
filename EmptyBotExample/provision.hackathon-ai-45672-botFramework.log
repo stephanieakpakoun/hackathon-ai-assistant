@@ -1,0 +1,17 @@
+{
+  "profileName": "hackathon-ai-45672-botFramework",
+  "jobId": "537a9db2-717e-4de7-843c-9e389c4ba2ac",
+  "projectId": "18615.313046624426",
+  "time": "2023-07-10T20:33:08.464Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: hackathon-project-ai-assistant at eastus",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : d4d6e81e-c863-4d4f-ab96-de9ecf398d7e",
+    "> Create App Registration Success! ID: d4d6e81e-c863-4d4f-ab96-de9ecf398d7e",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

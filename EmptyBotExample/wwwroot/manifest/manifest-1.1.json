@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json",
   "$id": "Skill",
-  "name": "Echo Skill",
-  "description": "Basic Echo skill",
-  "publisherName": "Test Submish",
+  "name": "Submittable Forms Skill",
+  "description": "Submittable Form building skill",
+  "publisherName": "Submittable",
   "version": "1.1",
   "iconUrl": "https://hackathon-ai-45672-botframework.azurewebsites.net/Skill.png",
   "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
@@ -23,10 +23,10 @@
     }
   ],
   "activities": {
-    "sampleAction": {
-      "description": "Sample action which accepts an input object and returns an object back.",
+    "createForm": {
+      "description": "Create a form from a template by providing the type of form",
       "type": "event",
-      "name": "SampleAction",
+      "name": "CreateForm",
       "value": {
         "$ref": "#/definitions/inputObject"
       },
@@ -45,16 +45,16 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "The users name."
+          "description": "The form type."
         }
       }
     },
     "responseObject": {
       "type": "object",
       "properties": {
-        "customerId": {
-          "type": "integer",
-          "description": "A customer identifier."
+        "formId": {
+          "type": "string",
+          "description": "The identifier of the newly created form."
         }
       }
     }
